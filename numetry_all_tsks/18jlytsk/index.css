@@ -1,0 +1,16 @@
+.bg-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.top-nav{
+    margin-top: 10px;
+    margin-left: 680px;
+    overflow: hidden;
+    height: 40px;
+    padding: 8px;
+}
+a {
+    color:#007399;
+    padding-right: 20px;
+}

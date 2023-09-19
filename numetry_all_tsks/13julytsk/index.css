@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px 10px 100px;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+nav .logo{
+  font-size: 25px;
+  /* font-weight: 500; */
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 1px;
+}
+nav ul li a{
+  color: blue;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: white;
+  background: blue;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+
+/* <!-- --------------------------------------Manual Slideshow------------------------- --> */
+
+.mySlides {
+  display:none;
+  width: 100%;
+}
+.w3-button{
+  padding: 5px 10px;
+  margin: 0px 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* -------------------------------------------Draggable img slider--------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.wrapper{
+  display: flex;
+  max-width: 1350px;
+  position: relative;
+  padding: 0 35px;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: red;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  /* left: -22px; */
+  display: none;
+}
+.wrapper i:last-child{
+  right: 22px;
+}
+.wrapper .carousel{
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 150px;
+  width: 350px;
+  object-fit: cover;
+  user-select: none;
+  padding: 5px;
+  border-radius: 30px;
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+
+
+/* ------------------------Multi buttons---------------------- */
+
+.button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  border-radius: 20px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* ---------------------Landing page with img and content--------------------------- */
+.column1{
+  width: 50%;
+  float: left;
+  padding-left: 110px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background: lightgoldenrodyellow;
+}
+.column1 img{
+height: 350px;
+width: 500px;
+border-radius: 30px;
+}
+.column2{
+  width: 50%;
+  float: right;
+  padding-right: 110px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  background: lightgoldenrodyellow;
+}
+.column2 h1{
+  font-size: 35px;
+}
+.column2 p{
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+
+/* <!-- -----------------Find document based on category--------------------- --> */
+.head{
+text-align: center;
+align-items: center;
+margin-top: 300px;
+padding-top: 200px;
+}
+
+/* <!-- ----------------------------------- img gallery---------------------------------- --> */
+.grid-container {
+  display: grid;
+  gap: -100px;
+  grid-template-columns: auto auto auto;
+  /* background-color: lightslategray; */
+  padding: 0px;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 50px 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+.card h4 {
+  font-size: 20px;
+}
+.card img {
+  height: 150px;
+  width: 100px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 6px;
+}

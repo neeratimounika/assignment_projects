@@ -1,0 +1,20 @@
+.container{
+    background-color:#29293d;
+    height: 310vh;
+    width: 100vw;
+}
+.hd{
+    font-family: 'roboto';
+    font-size: 50px;
+    font-weight: 600;
+    color:  #ff0000;
+    text-align: center;
+    padding-top: 40px;
+}
+.para{
+    font-family: 'roboto';
+    font-size: 22px;
+    font-weight: 100;
+    color:  #ff0000;
+    text-align: center;
+}

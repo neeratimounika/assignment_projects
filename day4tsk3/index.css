@@ -1,0 +1,24 @@
+.bg{
+    border: 1px solid grey;
+    height: 130vh;
+    width: 60vw;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.hd{
+    color: #00001a;
+    font-family: 'roboto';
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.pr{
+    color: #00001a;
+    font-family: 'roboto';
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}

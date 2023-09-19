@@ -1,0 +1,146 @@
+.bg-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.ul1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+li {
+    float: left;
+    margin: 12px;
+    padding-top: 20px;
+
+  }
+  li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .cl-h{
+    padding-left: 15px;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 750;
+  }
+  .in{
+    padding-left: 350px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 550;
+  }
+  .gs{
+    padding-left: 10px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 550;
+  }
+  .flex-container{
+    margin: 10px;
+    height: 50%;
+    width: 100%;
+    background-color: #000;
+  }
+  .file-hd{
+    padding-left: 65px;
+    padding-top: 45px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 45px;
+    font-weight: 550;
+  }
+  .file-p{
+    padding-left: 65px;
+    padding-top: 15px;
+    color:  #000080;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 550;
+
+  }
+  .pic1{
+    margin-top: 10px;
+    height:250px;
+    width:440px;
+    padding-left: 1px;
+  }
+  .flex-hd{
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 550;
+  }
+  input{
+    height: 6vh;
+    width: 50vw;
+    padding: 25px;
+    padding-left: 25px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .flex-3{
+    background-color: #3366cc;
+    height: 60vh;
+    width:  57vw;
+    margin-left: 50px;
+  }
+  .un-hd{
+    padding-left: 8px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 350;
+  }
+  .un-span{
+    color:  #00ffcc;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 350;
+  }
+  .EVLAUNCH-h{
+    padding-left: 40px;
+    padding-top: 20px;
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 80;
+
+  }
+  .EVLAUNCH-p{
+    padding-left: 40px;
+    padding-top: 10px;
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 80;
+
+  }
+  .pic3{
+    height: 130px;
+    width: 160px;
+    padding-left:75px;
+    padding-top: 60px;
+  }
+  .img-cont{
+    background-color: #000080;
+    height:50vh ;
+    width: 40vw;
+  }
+  .basc-h{
+    padding-left: 40px;
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 80;
+
+  }
